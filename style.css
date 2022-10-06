@@ -7,39 +7,33 @@
 
 body{
     background-color: #0F1923;
+
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: #ffffff;
 }
 
 header{
-    background-color: #0F1923;
     width: 100%;
-    /*border: 1px solid red;*/
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background-color: #0F1923;
 }
 
-#topo{
-    /*border: 1px solid red;*/
+.topo{
     display: flex;
-    max-width: 100%;
-    margin: 0px auto;
+    
     align-items: center;  
     justify-content: center;
 }
 
-.logo{
-    /*border: 1px solid red;*/
-    margin-right: 32px;
-}
+/*Estilização do menu*/
 
 .logo img{
     width: 160px;
-}
-
-.menu{
-    /*border: 1px solid red;*/
-    margin: 16px;
-    text-size-adjust: 100%;
 }
 
 .menu a{
@@ -49,7 +43,7 @@ header{
 
 .menu a:hover{
     border-bottom-left-radius: 5px;
-    border-bottom: 2px solid #f12c4c;
+    border-bottom: 2px solid #f12c4c;    
 }
 
 .menu ul{
@@ -163,6 +157,11 @@ header{
 }
 
 /* Estilização do corpo do site*/
+
+main{     
+    margin-top: 95px;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -173,6 +172,7 @@ header{
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
+    /*box-shadow: 0px 0px 2px #F1F3F4;*/
 }
 
 .marcas{
@@ -189,11 +189,6 @@ header{
 .marcas li{
     display: flex;
     margin: 18px auto;
-}
-
-.quem-somos{
-    display: block;
-    margin: 0 auto;
 }
 
 h2{
