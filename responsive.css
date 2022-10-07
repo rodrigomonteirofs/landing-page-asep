@@ -1,0 +1,74 @@
+@media screen and (max-width:420px){
+    header{
+        position: relative;
+        width: 100%;
+        background-color: #0F1923;   
+    }
+
+    .topo{
+        display: block;        
+         }
+    
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        margin-top: 15px;
+        }
+        
+    .menu ul{
+        display: block;
+        text-align: center;
+        }
+
+    .menu li{
+        margin: 10px 0px;
+    }
+
+    .fachada-loja{
+        background-image: url('assets/fachada-asep-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        box-shadow: 0px 0px 0px 0px #F1F3F4;
+
+        width: 100%;
+        height: 200px;
+
+        margin-top: -70px;
+    }
+
+    h2{
+        text-size-adjust: 50%;
+        margin: 60px 20px;        
+    }
+
+    .container{
+        display: block;
+        }
+ 
+     .historia p{
+        margin-left: 10px;
+        width: 44%;
+        text-align: justify;
+        margin-bottom: 20px;
+     }
+     
+     .equipe img{
+         width: 100%;
+         height: 500px;
+     }
+
+     .marcas{
+        height: 350px;
+        display: flex;
+        justify-content: center;
+
+     }
+
+     .marcas ul{
+        display: block;
+    }
+}
