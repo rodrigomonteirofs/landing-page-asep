@@ -1,74 +1,137 @@
-@media screen and (max-width:420px){
-    header{
-        position: relative;
-        width: 100%;
-        background-color: #0F1923;   
-    }
+@media screen and (max-width:500px){
+   * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   color: white;
+}
 
-    .topo{
-        display: block;        
-         }
+body{
+    background-color: #0F1923;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(./assets/logo.fw.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 200px;
+    height: 100px;
+}
+
+.menu{
+    margin-top: 10px;
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu ul li{
+    text-align: center;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fachada-loja{
+    background-image: url(./assets/fachada-asep.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-top: 10px;
+
+    width: 100%; 
+    height: 220px;   
+}
+
+.quem-somos{
+    width: 95%;
+
+    padding: 0px 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: justify;
+
+    overflow: hidden;
+}
+
+.historia{
+    width: 100%;
+}
+
+.quem-somos h2{
+    margin: 20px 0px;
+}
+
+.equipe{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.marcas{
+    background-color: aliceblue;
     
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
+    width: 100%;
 
-    .menu {
-        margin-top: 15px;
-        }
-        
-    .menu ul{
-        display: block;
-        text-align: center;
-        }
+    margin: 10px 0px;
+    padding: 10px 0px;
 
-    .menu li{
-        margin: 10px 0px;
-    }
+    text-align: justify;
+}
 
-    .fachada-loja{
-        background-image: url('assets/fachada-asep-mobile.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+.marcas h3{
+    width: 100%;
+    margin: 10px 0px 0px;
+    padding: 20px;
+    color: #0F1923;
+}
 
-        box-shadow: 0px 0px 0px 0px #F1F3F4;
+.marcas ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        width: 100%;
-        height: 200px;
+.informacoes-contato{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        margin-top: -70px;
-    }
+.form-contato{
+    margin-right: 0px;
+}
 
-    h2{
-        text-size-adjust: 50%;
-        margin: 60px 20px;        
-    }
+iframe{
+    width: 380px;
+    height: 400px;
 
-    .container{
-        display: block;
-        }
- 
-     .historia p{
-        margin-left: 10px;
-        width: 44%;
-        text-align: justify;
-        margin-bottom: 20px;
-     }
-     
-     .equipe img{
-         width: 100%;
-         height: 500px;
-     }
+    margin-top: 20px;
+}
 
-     .marcas{
-        height: 350px;
-        display: flex;
-        justify-content: center;
+form{
+    width: 380px;
+    border-radius: 3px;
+    padding: 20px;
+}
 
-     }
-
-     .marcas ul{
-        display: block;
-    }
 }

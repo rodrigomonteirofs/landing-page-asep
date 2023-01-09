@@ -10,73 +10,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-
     <title>Asep - A distribuidora que mais cresce em todo o Brasil</title>
 </head>
 <body>
 
-    <header>
+    
+    <header>     
+        <div class="logo"></div>
 
-     
-            <section class="topo">
-
-                <div class="logo"><img src="./assets/logo.fw.png" alt="Marca da distribuidora"></div>
-
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#nossa-historia">quem somos</a></li>
-                            <li><a href="">marcas</a></li>
-                            <li><a href="">clientes</a></li>                            
-                            <li><a href="">onde estamos</a></li>
-                        </ul>
-                    </nav>
-
-                <div class="botao-cliente">
-                    
-                    <a class="botao-menu item1" href="#"><span></span><span></span><span></span><span></span>quero ser cliente</a>
-
-                </div>
-            
-            </section>
-
+        <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#nossa-historia">quem somos</a></li>
+                    <li><a href="#marcas">marcas</a></li>
+                    <li><a href="#contato">contato</a></li>                            
+                    <li><a href="#localizacao">onde estamos</a></li>
+                </ul>
+        </nav>              
     </header>
 
     <main>
-    
         <section class="fachada-loja"></section>
         
-        <section id="nossa-historia" class="quem-somos">
+        <section class="quem-somos">
+          
+                <div id="nossa-historia" class="historia">
 
-            <h2>Conhecendo a história da Asep</h2>
+                    <h2>Conhecendo a história da Asep</h2>
 
-            <div class="container">
-            
-                <div class="historia">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut in ex fuga magnam voluptatum sit laudantium. Illum cumque quibusdam assumenda magnam adipisci eligendi dolores rerum? Nihil minus adipisci temporibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore ipsum officia modi aliquam reprehenderit iusto. Debitis sequi ex fugit, sit eius alias ipsum distinctio pariatur quas, placeat error sed!
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi praesentium qui laboriosam, molestias dignissimos. Iste, molestiae laudantium, eveniet velit suscipit inventore itaque autem magni sequi officia magnam id voluptates?
                     </p>
 
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut in ex fuga magnam voluptatum sit laudantium. Illum cumque quibusdam assumenda magnam adipisci eligendi dolores rerum? Nihil minus adipisci temporibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore ipsum officia modi aliquam reprehenderit iusto. Debitis sequi ex fugit, sit eius alias ipsum distinctio pariatur quas, placeat error sed!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi praesentium qui laboriosam, molestias dignissimos. Iste, molestiae laudantium, eveniet velit suscipit inventore itaque autem magni sequi officia magnam id voluptates?
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut in ex fuga magnam voluptatum sit laudantium. Illum cumque quibusdam assumenda magnam adipisci eligendi dolores rerum? Nihil minus adipisci temporibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore ipsum officia modi aliquam reprehenderit iusto. Debitis sequi ex fugit, sit eius alias ipsum distinctio pariatur quas, placeat error sed!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi praesentium qui laboriosam, molestias dignissimos. Iste, molestiae laudantium, eveniet velit suscipit inventore itaque autem magni sequi officia magnam id voluptates?
-                        </p>
+                    
                 </div>
+
+                <div class="equipe"><img src="assets/equipe.jpg" alt=""></div>
                 
-                <div class="equipe">
-                    <img src="assets/equipe.jpg" alt="">
-                </div>
-            
-                  
+                               
         </section>
 
-        <section class="marcas">
+        <section id="marcas" class="marcas">
+
+            <h3>São mais de 40 marcas em nosso catálogo, estas são as nossas principais marcas</h3>
+
             <ul>
                 <li><img src="assets/marca-maxtitanium.png" alt=""></li>
                 <li><img src="assets/marca-integralmedica.png" alt=""></li>
@@ -85,8 +63,38 @@
             </ul>
         </section>
 
-    </main>
-    
+        <section id="contato" class="informacoes-contato">
+            <div class="form-contato">
 
+              <form action="">
+
+                    <h2>Fale conosco</h2>
+
+                    <div class="areainput">
+                        <label for="">Nome</label>
+                        <input type="text" placeholder="Digite aqui seu nome">
+                    </div>
+                    <div class="areainput">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="Digite aqui o seu melhor Email">
+                    </div>
+                    <div class="areainput">
+                        <label for="">Whatsapp</label>
+                        <input type="text" placeholder="Digite o seu Whatsapp com DDD">
+                    </div>
+                    <div class="areainput">
+                        <label for="">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30"></textarea>
+                    </div>
+                    <input class="btn" type="button" value="Enviar">
+                </form>
+                
+            </div>
+            <div id="localizacao" class="localizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3465468790805!2d-38.561854185240904!3d-3.734436797283019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749931db0793f%3A0x31fe8e45c845a5e3!2sASEP%20DISTRIBUIDORA%20DE%20SUPLEMENTOS!5e0!3m2!1spt-BR!2sbr!4v1673284354302!5m2!1spt-BR!2sbr" width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>

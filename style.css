@@ -3,209 +3,196 @@
    padding: 0;
    box-sizing: border-box;
    list-style: none;
+   text-decoration: none;
+   color: white;
 }
 
 body{
     background-color: #0F1923;
-
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
+    font-size: 14pt;
 }
 
 header{
-    width: 100%;
-
-    position: fixed;
-    top: 0px;
-    left: 0px;
-
-    background-color: #0F1923;
-}
-
-.topo{
-    display: flex;
+    width: 100%;    
     
-    align-items: center;  
-    justify-content: center;
-}
-
-/*Estilização do menu*/
-
-.logo img{
-    width: 160px;
-}
-
-.menu a{
-    text-decoration:none;
-    color: #ffffff;
-}
-
-.menu a:hover{
-    border-bottom-left-radius: 5px;
-    border-bottom: 2px solid #f12c4c;    
-}
-
-.menu ul{
     display: flex;
-}
-
-.menu li{
-    padding: 2px;
-    margin: 0px 32px;  
-}
-
-/* Estilização do botão quero ser cliente*/
-
-.botao-menu{
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     
-    margin: 0px;
-    padding: 12px;
-
-    line-height: 28px;
-    font-weight: 300;
-
-    color: #ffffff;
-    border: 1px solid #f12c4c;
-    
-    text-decoration:none;
-    cursor: pointer;
+    padding: 0px 50px;
 }
 
-.item1{
-    position:relative;
-    overflow: hidden;
-
-    transition: .2s;
-}
-
-.item1:hover{
-    background: #f12c4c;
-    box-shadow: 0 0 10px #f12c4c, 0 0 15px #f22c4c, 0 0 30px #f32242;
-
-    transition-delay: 1s;
-}
-
-.item1 span{
-    position: absolute;
-    display: block;
-}
-
-.item1 span:nth-child(1){
-    width: 100%;
-    height: 2px;
-
-    top: 0;
-    left: -100%;
-
-    background: linear-gradient(90deg, transparent, #f22c4c);
-}
-
-.item1:hover span:nth-child(1){
-    left: 100%;
-    transition: 1s;
-}
-
-.item1 span:nth-child(2){
-    width: 2px;
-    height: 100%;
-
-    top: -100%;
-    right: 0;
-
-    background: linear-gradient(180deg, transparent, #f22c4c);
-}
-
-.item1:hover span:nth-child(2){
-    top: 100%;
-    transition: 1s;
-    transition-delay: .25s;
-}
-
-.item1 span:nth-child(3){
-    width: 100%;
-    height: 2px;
-
-    right: -100%;
-    bottom: 0;
-
-    background: linear-gradient(270deg, transparent, #f22c4c);
-}
-
-.item1:hover span:nth-child(3){
-    right: 100%;
-    transition: 1s;
-    transition-delay: .5s;
-}
-
-.item1 span:nth-child(4){
-    width: 2px;
-    height: 100%;
-
-    bottom: -100%;
-    left: 0;
-    
-    background: linear-gradient(360deg, transparent, #f22c4c);
-}
-
-.item1:hover span:nth-child(4){
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: .75s;
-}
-
-/* Estilização do corpo do site*/
-
-main{     
-    margin-top: 95px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
- }
-
-.fachada-loja{
-    background-image: url('assets/fachada-asep.jpg');
-    height: 600px;
-    background-size: cover;
+.logo{
+    background-image: url(./assets/logo.fw.png);
     background-repeat: no-repeat;
-    /*box-shadow: 0px 0px 2px #F1F3F4;*/
-}
+    background-size: contain;
 
-.marcas{
-    
-    background-color: #F1F3F4;
+    width: 200px;
     height: 100px;
 }
 
-.marcas ul{
+.menu ul {
     display: flex;
-    justify-content: space-between;
-   }
-
-.marcas li{
-    display: flex;
-    margin: 18px auto;
+    padding: 15px;
 }
 
-h2{
-    margin: 60px 150px;
+.menu li{
+    padding: 15px;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+.fachada-loja{
+    background-image: url(./assets/fachada-asep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 10px;
+
+    width: 100%;
+    height: 700px;   
+}
+
+main{
+    width: 100%;
+}
+
+.quem-somos{
+    margin-top: 20px;
+    padding: 0px 20px;
+       
+    display: flex;
+    justify-content: space-between;
+}
+
+.quem-somos h2{
+    margin: 20px 0px;
+}
+
+.quem-somos p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
 }
 
 .historia{
-   width: 800px;
-   margin-right: 60px;
+    margin-right: 20px;
+    width: 50%;
 }
 
-.historia p{
-    text-align: justify;
-    margin-bottom: 20px;
+.equipe{
+    width: 50%;
 }
 
 .equipe img{
-    width: 600px;
+    width:100%;   
 }
+
+.marcas{
+    background-color: aliceblue;
+    
+    width: 100%;
+
+    margin: 10px 0px;
+    padding: 10px 0px;
+
+    text-align: center;
+}
+
+.marcas h3{
+    width: 100%;
+    margin: 10px 0px 0px;
+    padding: 20px;
+    color: #0F1923;
+}
+
+.marcas ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.informacoes-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contato{
+    margin-right: 30px;
+}
+
+form{
+    width: 600px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+form h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+form .areainput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 35px;
+    margin-top: 40px;
+}
+
+form .areainput label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    transform: translateY(-150%);
+}
+
+form .areainput input{
+    background-color: #0F1923;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid aliceblue;
+    outline: none;   
+}
+
+form .areainput textarea{
+    background-color: #0F1923;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid aliceblue;
+    outline: none;
+    
+}
+
+form .btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: aliceblue;
+    color: #0F1923;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+form .btn:hover{
+    filter: brightness(.9);
+}
+
+
+
+
 
